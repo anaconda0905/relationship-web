@@ -34,7 +34,6 @@ This files contents are outlined below.
 
 ----------------------------------------------------*/
 /*--------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
 /*Color Variables*/
 ::selection {
   background-color: #f8b81d;
@@ -4981,6 +4980,23 @@ a, .btn, button {
     background-color: #fff;
     box-shadow: 0px 0px 14.7px 6.3px rgba(66, 133, 244, 0.2);
     border-radius: 40px; }
+  .log-in-section .find-form-area {
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 14.7px 6.3px rgba(66, 133, 244, 0.2);
+    border-radius: 0 60px; }
+    .log-in-section .find-form-area .searchClass {
+      background-color: #fff;
+      width: 100%;
+      padding: 5px 20px;
+      padding-left: 50px;
+      height: 47px;
+      border: none;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.075); }
+      .log-in-section .find-form-area .searchClass:focus, .log-in-section .find-form-area .searchClass:active {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.075); }
   .log-in-section .create-account-form .form-group {
     position: relative;
     margin-top: 10px; }

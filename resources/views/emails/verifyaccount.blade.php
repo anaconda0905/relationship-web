@@ -1,311 +1,314 @@
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
     <style>
-        @media only screen and (max-width: 600px) {
-            .inner-body {
-                width: 100% !important;
-            }
-
-            .footer {
-                width: 100% !important;
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .button {
-                width: 100% !important;
-            }
-        }
-        /* Base */
-
-        body, body *:not(html):not(style):not(br):not(tr):not(code) {
-            font-family: Avenir, Helvetica, sans-serif;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #f5f8fa;
-            color: #74787E;
-            height: 100%;
-            hyphens: auto;
-            line-height: 1.4;
-            margin: 0;
-            -moz-hyphens: auto;
-            -ms-word-break: break-all;
-            width: 100% !important;
-            -webkit-hyphens: auto;
-            -webkit-text-size-adjust: none;
-            word-break: break-all;
-            word-break: break-word;
-        }
-
-        p,
-        ul,
-        ol,
-        blockquote {
-            line-height: 1.4;
-            text-align: left;
-        }
-
-        a {
-            color: #3869D4;
-        }
-
-        a img {
-            border: none;
-        }
-
-        /* Typography */
-
-        h1 {
-            color: #2F3133;
-            font-size: 19px;
-            font-weight: bold;
-            margin-top: 0;
-            text-align: left;
-        }
-
-        h2 {
-            color: #2F3133;
-            font-size: 16px;
-            font-weight: bold;
-            margin-top: 0;
-            text-align: left;
-        }
-
-        h3 {
-            color: #2F3133;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 0;
-            text-align: left;
-        }
-
-        p {
-            color: #74787E;
-            font-size: 16px;
-            line-height: 1.5em;
-            margin-top: 0;
-            text-align: left;
-        }
-
-        p.sub {
-            font-size: 12px;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        /* Layout */
-
-        .wrapper {
-            background-color: #f5f8fa;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
-
-        .content {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
-
-        /* Header */
-
-        .header {
-            padding: 25px 0;
-            text-align: center;
-        }
-
-        .header a {
-            color: #bbbfc3;
-            font-size: 19px;
-            font-weight: bold;
-            text-decoration: none;
-            text-shadow: 0 1px 0 white;
-        }
-
-        /* Body */
-
-        .body {
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #EDEFF2;
-            border-top: 1px solid #EDEFF2;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
-
+    @media only screen and (max-width: 600px) {
         .inner-body {
-            background-color: #FFFFFF;
-            margin: 0 auto;
-            padding: 0;
-            width: 570px;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 570px;
+            width: 100% !important;
         }
-
-        /* Subcopy */
-
-        .subcopy {
-            border-top: 1px solid #EDEFF2;
-            margin-top: 25px;
-            padding-top: 25px;
-        }
-
-        .subcopy p {
-            font-size: 12px;
-        }
-
-        /* Footer */
 
         .footer {
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-            width: 570px;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 570px;
+            width: 100% !important;
         }
+    }
 
-        .footer p {
-            color: #AEAEAE;
-            font-size: 12px;
-            text-align: center;
-        }
-
-        /* Tables */
-
-        .table table {
-            margin: 30px auto;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
-
-        .table th {
-            border-bottom: 1px solid #EDEFF2;
-            padding-bottom: 8px;
-        }
-
-        .table td {
-            color: #74787E;
-            font-size: 15px;
-            line-height: 18px;
-            padding: 10px 0;
-        }
-
-        .content-cell {
-            padding: 35px;
-        }
-
-        /* Buttons */
-
-        .action {
-            margin: 30px auto;
-            padding: 0;
-            text-align: center;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
-
+    @media only screen and (max-width: 500px) {
         .button {
-            border-radius: 3px;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
-            color: #FFF;
-            display: inline-block;
-            text-decoration: none;
-            -webkit-text-size-adjust: none;
+            width: 100% !important;
         }
+    }
 
-        .button-blue {
-            background-color: #3097D1;
-            border-top: 10px solid #3097D1;
-            border-right: 18px solid #3097D1;
-            border-bottom: 10px solid #3097D1;
-            border-left: 18px solid #3097D1;
-        }
+    /* Base */
 
-        .button-green {
-            background-color: #2ab27b;
-            border-top: 10px solid #2ab27b;
-            border-right: 18px solid #2ab27b;
-            border-bottom: 10px solid #2ab27b;
-            border-left: 18px solid #2ab27b;
-        }
+    body,
+    body *:not(html):not(style):not(br):not(tr):not(code) {
+        font-family: Avenir, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
 
-        .button-red {
-            background-color: #bf5329;
-            border-top: 10px solid #bf5329;
-            border-right: 18px solid #bf5329;
-            border-bottom: 10px solid #bf5329;
-            border-left: 18px solid #bf5329;
-        }
+    body {
+        background-color: #f5f8fa;
+        color: #74787E;
+        height: 100%;
+        hyphens: auto;
+        line-height: 1.4;
+        margin: 0;
+        -moz-hyphens: auto;
+        -ms-word-break: break-all;
+        width: 100% !important;
+        -webkit-hyphens: auto;
+        -webkit-text-size-adjust: none;
+        word-break: break-all;
+        word-break: break-word;
+    }
 
-        /* Panels */
+    p,
+    ul,
+    ol,
+    blockquote {
+        line-height: 1.4;
+        text-align: left;
+    }
 
-        .panel {
-            margin: 0 0 21px;
-        }
+    a {
+        color: #3869D4;
+    }
 
-        .panel-content {
-            background-color: #EDEFF2;
-            padding: 16px;
-        }
+    a img {
+        border: none;
+    }
 
-        .panel-item {
-            padding: 0;
-        }
+    /* Typography */
 
-        .panel-item p:last-of-type {
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
+    h1 {
+        color: #2F3133;
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: left;
+    }
 
-        /* Promotions */
+    h2 {
+        color: #2F3133;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: left;
+    }
 
-        .promotion {
-            background-color: #FFFFFF;
-            border: 2px dashed #9BA2AB;
-            margin: 0;
-            margin-bottom: 25px;
-            margin-top: 25px;
-            padding: 24px;
-            width: 100%;
-            -premailer-cellpadding: 0;
-            -premailer-cellspacing: 0;
-            -premailer-width: 100%;
-        }
+    h3 {
+        color: #2F3133;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: left;
+    }
 
-        .promotion h1 {
-            text-align: center;
-        }
+    p {
+        color: #74787E;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-top: 0;
+        text-align: left;
+    }
 
-        .promotion p {
-            font-size: 15px;
-            text-align: center;
-        }
+    p.sub {
+        font-size: 12px;
+    }
 
+    img {
+        max-width: 100%;
+    }
+
+    /* Layout */
+
+    .wrapper {
+        background-color: #f5f8fa;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    .content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    /* Header */
+
+    .header {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .header a {
+        color: #bbbfc3;
+        font-size: 19px;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0 1px 0 white;
+    }
+
+    /* Body */
+
+    .body {
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #EDEFF2;
+        border-top: 1px solid #EDEFF2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    .inner-body {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        padding: 0;
+        width: 570px;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 570px;
+    }
+
+    /* Subcopy */
+
+    .subcopy {
+        border-top: 1px solid #EDEFF2;
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+
+    .subcopy p {
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .footer {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: 570px;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 570px;
+    }
+
+    .footer p {
+        color: #AEAEAE;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Tables */
+
+    .table table {
+        margin: 30px auto;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    .table th {
+        border-bottom: 1px solid #EDEFF2;
+        padding-bottom: 8px;
+    }
+
+    .table td {
+        color: #74787E;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 10px 0;
+    }
+
+    .content-cell {
+        padding: 35px;
+    }
+
+    /* Buttons */
+
+    .action {
+        margin: 30px auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    .button {
+        border-radius: 3px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+        color: #FFF;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-text-size-adjust: none;
+    }
+
+    .button-blue {
+        background-color: #3097D1;
+        border-top: 10px solid #3097D1;
+        border-right: 18px solid #3097D1;
+        border-bottom: 10px solid #3097D1;
+        border-left: 18px solid #3097D1;
+    }
+
+    .button-green {
+        background-color: #2ab27b;
+        border-top: 10px solid #2ab27b;
+        border-right: 18px solid #2ab27b;
+        border-bottom: 10px solid #2ab27b;
+        border-left: 18px solid #2ab27b;
+    }
+
+    .button-red {
+        background-color: #bf5329;
+        border-top: 10px solid #bf5329;
+        border-right: 18px solid #bf5329;
+        border-bottom: 10px solid #bf5329;
+        border-left: 18px solid #bf5329;
+    }
+
+    /* Panels */
+
+    .panel {
+        margin: 0 0 21px;
+    }
+
+    .panel-content {
+        background-color: #EDEFF2;
+        padding: 16px;
+    }
+
+    .panel-item {
+        padding: 0;
+    }
+
+    .panel-item p:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    /* Promotions */
+
+    .promotion {
+        background-color: #FFFFFF;
+        border: 2px dashed #9BA2AB;
+        margin: 0;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        padding: 24px;
+        width: 100%;
+        -premailer-cellpadding: 0;
+        -premailer-cellspacing: 0;
+        -premailer-width: 100%;
+    }
+
+    .promotion h1 {
+        text-align: center;
+    }
+
+    .promotion p {
+        font-size: 15px;
+        text-align: center;
+    }
     </style>
 
     <table class="wrapper" width="100%" cellpadding="0" cellspacing="0">
@@ -319,7 +322,7 @@
                             </a>
                         </td>
                     </tr>
-                    
+
 
                     <!-- Email Body -->
                     <tr>
@@ -328,12 +331,16 @@
                                 <!-- Body content -->
                                 <tr>
                                     <td class="content-cell">
-                                        You have selected this email address to verify your account. To verify this email address belongs to you, enter the code below on the email verification page:
-                                        <br/><br/><h1>{!! $code !!}</h1>
+                                        You have selected this email address to verify your account. To verify this
+                                        email address belongs to you, enter the code below on the email verification
+                                        page:
+                                        <br /><br />
+                                        <h1>{!! $code !!}</h1>
 
                                         <h2>Why you received this email.</h2>
-                                        Edatawiz requires verification whenever user is signed up. This is the last step.
-                                        <br/><br/>If you did not make this request, you can ignore this email.
+                                        Iam.relationshipstatusfinder requires verification whenever user is signed up.
+                                        This is the last step.
+                                        <br /><br />If you did not make this request, you can ignore this email.
                                     </td>
                                 </tr>
                             </table>
@@ -346,7 +353,7 @@
                                 <tr>
                                     <td class="content-cell" align="center">
                                         Copyright © 2020 2 Venture Drive, #10-04,
-                                        Vision Exchange, Singapore‎ <br/> All rights reserved.
+                                        Vision Exchange, Singapore‎ <br /> All rights reserved.
                                     </td>
                                 </tr>
                             </table>
@@ -357,6 +364,5 @@
         </tr>
     </table>
 </body>
+
 </html>
-
-

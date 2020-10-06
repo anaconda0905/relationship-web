@@ -28,7 +28,8 @@ Create user
         {{ Form::open(array('url' => route('user.store'), 'class' => 'form-horizontal','files' => true)) }}
         <ul>
             <div class="form-group {{ $errors->has('first_name') ? 'has-error' : ''}}">
-                {!! Form::label('first_name', 'First Name', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label']) !!}
+                {!! Form::label('first_name', 'First Name', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12
+                control-label']) !!}
                 <div class="col-sm-6 col-xs-6 col-6">
                     {!! Form::text('first_name', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('first_name', '<p class="help-block">:message</p>') !!}
@@ -36,7 +37,8 @@ Create user
             </div>
 
             <div class="form-group {{ $errors->has('last_name') ? 'has-error' : ''}}">
-                {!! Form::label('last_name', 'Last name' , ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label']) !!}
+                {!! Form::label('last_name', 'Last name' , ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12
+                control-label']) !!}
                 <div class="col-sm-6 col-xs-6 col-6">
                     {!! Form::text('last_name', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('last_name', '<p class="help-block">:message</p>') !!}
@@ -50,7 +52,8 @@ Create user
                 </div>
             </div>
             <div class="form-group {{ $errors->has('password') ? 'has-error' : ''}}">
-                {!! Form::label('password', 'Password', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label']) !!}
+                {!! Form::label('password', 'Password', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label'])
+                !!}
                 <div class="col-sm-6 col-xs-6 col-6">
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                     {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
@@ -58,7 +61,8 @@ Create user
             </div>
 
             <div class="form-group {{ $errors->has('password_confirmation') ? 'has-error' : ''}}">
-                {!! Form::label('password_confirmation', 'Password Confirmation', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label'])
+                {!! Form::label('password_confirmation', 'Password Confirmation', ['class' => 'col-md-4 col-sm-4
+                col-xs-4 col-12 control-label'])
                 !!}
                 <div class="col-sm-6 col-xs-6 col-6">
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
@@ -67,7 +71,8 @@ Create user
             </div>
 
             <div class="form-group {{ $errors->has('company') ? 'has-error' : ''}}">
-                {!! Form::label('company', 'Company', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label']) !!}
+                {!! Form::label('company', 'Snapchat', ['class' => 'col-md-4 col-sm-4 col-xs-4 col-12 control-label'])
+                !!}
                 <div class="col-sm-6 col-xs-6 col-12">
                     {!! Form::text('company', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('company', '<p class="help-block">:message</p>') !!}

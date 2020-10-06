@@ -11,13 +11,13 @@
     <!-- Favicon -->
     <link rel="icon" href="{{ URL::asset('/images/favicon.png') }}" type="image/x-icon" />
     <!-- Bootstrap CSS -->
-    <link href="{{ URL::asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('/css/bootstrap.min.css') }}" rel="stylesheet" media="all">
     <!-- Animate CSS -->
-    <link href="{{ URL::asset('/vendors/animate/animate.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('/vendors/animate/animate.css') }}" rel="stylesheet" media="all">
     <!-- Icon CSS-->
-    <link rel="stylesheet" href="{{ URL::asset('/vendors/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/vendors/font-awesome/css/font-awesome.min.css') }}" media="all">
     <!-- Camera Slider -->
-    <link rel="stylesheet" href="{{ URL::asset('/vendors/camera-slider/camera.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/vendors/camera-slider/camera.css') }}" media="all">
     <!-- Owlcarousel CSS-->
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/vendors/owl_carousel/owl.carousel.css') }}"
         media="all">
@@ -43,26 +43,47 @@
         <div class="container">
             <ul class="nav navbar-nav top_nav">
                 <li><a href="tel:+65 86996780"><i class="fa fa-phone"></i>+966 583293770</a></li>
-                <li><a href="mailto:info@relationshipstatusfinder.com"><i
-                            class="fa fa-envelope-o"></i>info@relationshipstatusfinder.com</a></li>
-                <!-- <li><a href="#"><i class="fa fa-clock-o"></i>Mon - Sat 12:00 - 20:00</a></li> -->
+                <li>
+                    <a href="mailto:info@relationshipstatusfinder.com">
+                        <i class="fa fa-envelope-o"></i>info@relationshipstatusfinder.com
+                    </a>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right social_nav">
-                <li><a href="https://www.facebook.com" target=" _blank"><i class="fa fa-facebook"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.twitter.com" target=" _blank"><i class="fa fa-twitter"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.google.com" target=" _blank"><i class="fa fa-google-plus"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com" target=" _blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.pinterest.com" target=" _blank"><i class="fa fa-pinterest-p"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com" target=" _blank"><i class="fa fa-linkedin"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://wa.me/966583293770" title="" target=" _blank"><i class="fa fa-whatsapp"
-                            aria-hidden="true"></i></a></li>
-                <!-- <li><a href="we-chat.html" title="" target=" _blank"><i class="fa fa-weixin" aria-hidden="true"></i></a> -->
+                <li>
+                    <a href="https://www.facebook.com" target=" _blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target=" _blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com" target=" _blank">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target=" _blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target=" _blank">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target=" _blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/966583293770" title="" target=" _blank">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -102,12 +123,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
-                        <!-- <li><a href="{{ route('solution') }}">Solutions</a></li> -->
                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         <li><a href="{{ url('login') }}">Log In</a></li>
                         <li><a href="{{ route('demo') }}" class="nav_demo">Find</a></li>
-
-                        <!-- <li><a href="#" class="nav_searchFrom"><i class="fa fa-search"></i></a></li> -->
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -129,7 +147,6 @@
                     <ul class="quick_link">
                         <li><a href="{{ route('home') }}"><i class="fa fa-chevron-right"></i>Home</a></li>
                         <li><a href="{{ route('about') }}"><i class="fa fa-chevron-right"></i>About Us</a></li>
-                        <!-- <li><a href="{{ route('solution') }}"><i class="fa fa-chevron-right"></i>Solutions</a></li> -->
                         <li><a href="{{ url('login') }}"><i class="fa fa-chevron-right"></i>Log in/Sign Up</a></li>
                         <li><a href="{{ url('contact') }}"><i class="fa fa-chevron-right"></i>Contact Us</a></li>
                     </ul>

@@ -35,7 +35,7 @@ User details
                 </div>
                 @endforeach
             </div>
-            <br/>
+            <br />
             <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-3">
                     {!! Form::submit('Submit', ['class' => 'btn btn-success form-control']) !!}
@@ -55,6 +55,9 @@ User details
 <link href="{{ URL::asset('/backend/vendors/sumoselect/sumoselect.css') }}" rel="stylesheet" />
 
 <script type="text/javascript">
-    $('.select').SumoSelect({ selectAll: true, placeholder: 'Nothing selected' });
+$('.select').SumoSelect({
+    selectAll: true,
+    placeholder: 'Nothing selected'
+});
 </script>
 @endsection

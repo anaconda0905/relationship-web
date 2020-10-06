@@ -47,7 +47,7 @@
                     </ul>
                 </li> -->
 
-                <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span
+                <li><a href="{{url('dashboard')}}"><i class="fa fa-laptop"></i> Main <span
                             class="label label-success pull-right">Coming Soon</span></a></li>
             </ul>
         </div>

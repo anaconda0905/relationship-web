@@ -8,6 +8,29 @@
         box-shadow: 0px 0px 14.7px 6.3px rgba(66, 133, 244, 0.2);
         border-radius: 40px;
     }
+
+    .find-form-area {
+        padding: 60px;
+        background-color: #fff;
+        box-shadow: 0px 0px 14.7px 6.3px rgba(66, 133, 244, 0.2);
+        border-radius: 0 60px;
+        .searchClass {
+            background-color: #fff;
+            width: 100%;
+            padding: 5px 20px;
+            padding-left: 50px;
+            height: 47px;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+            &:focus,
+            &:active {
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+            }
+        }
+    }
+
     .create-account-form .form-group {
         position: relative;
         margin-top: 10px;

@@ -55,8 +55,8 @@ Register
                         {!! $errors->first('last_name', '<p class="help-block">:message</p>') !!}
                     </div>
                     <div class="form-group">
-                        <i class="fa fa-industry"></i>
-                        <input style="padding-left:50px" name="company" type="text" placeholder="Company">
+                        <i class="fa fa-snapchat-ghost"></i>
+                        <input style="padding-left:50px" name="company" type="text" placeholder="Snapchat">
                     </div>
                     <div class="form-group">
                         <i class="fa fa-mobile"></i>

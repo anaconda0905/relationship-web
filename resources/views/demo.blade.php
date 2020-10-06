@@ -1,73 +1,72 @@
 @extends('frontLayout.app')
 @section('title')
-Demo
+Find
 @stop
 
 @section('style')
+<link rel="stylesheet" href="{{ URL::asset('/css/nice-select.css') }}">
+@endsection
 
-@stop
 @section('content')
-<!-- Banner area -->
-<section class="banner_area" data-stellar-background-ratio="0.5">
-    <h2>Demo</h2>
-    <ol class="breadcrumb">
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="#" class="active">Demo</a></li>
-    </ol>
-</section>
-<!-- End Banner area -->
 
-<!-- Map -->
-<div class="contact_map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44479.89286998154!2d103.82086451198887!3d1.363127751268099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1591332998906!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
-<!-- End Map -->
-
-<!-- All contact Info -->
-<section class="all_contact_info">
+<!-- Login Form -->
+<section class="log-in-section">
     <div class="container">
-        <div class="row contact_row">
-            <div class="col-sm-6 contact_info">
-                <h2>Contact Info</h2>
-                <p>
-                    We're open for any suggestion or just to have a chat. Let's get in touch. Your message was sent, thank you!
-                </p>
-                <div class="location">
-                    <div class="location_laft">
-                        <a class="f_location" href="#">location</a>
-                        <a href="#">phone</a>
-                        <a href="#">fax</a>
-                        <a href="#">email</a>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 text-center"></div>
+            <div class="col-lg-6 text-center">
+                <div class="find-form-area">
+                    <a class="site-logo site-title" href="{{ route('home') }}">
+                        <img src="/images/logo.svg" style="height:100px;" alt="site-logo"></a>
+                    @if (Session::has('message'))
+                    <div class="alert alert-{{(Session::get('status')=='error')?'danger':Session::get('status')}} "
+                        alert-dismissable fade in id="sessions-hide">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>{{Session::get('status')}}!</strong> {!! Session::get('message') !!}
                     </div>
-                    <div class="address">
-                        <a href="#">2 Venture Drive, #10-04,
-                            Vision Exchange, <br />Singapore - 608526</a>
-                        <a href="#">(+65) 6899 5782 or 86996780</a>
-                        <a href="#">(+65)6564 0790</a>
-                        <a href="#">info@edatawiz.com</a>
+                    @endif
+
+                    {{ Form::open(array('url' => route('login'), 'class' => 'create-account-form','files' => true)) }}
+                    {!! csrf_field() !!}
+                    <div class="form-group">
+                        <i class="fa fa-list-ol"></i>
+                        {!! Form::select('searchClass', ['E-mail', 'Phone Number', 'Snapchat'], null, ['class' =>
+                        'searchClass'])
+                        !!}
+                        {!! $errors->first('searchClass', '<p class="help-block">:message</p>') !!}
+
                     </div>
+
+                    <div class="form-group">
+                        <i class="fa fa-search-plus"></i>
+                        {!! Form::text('keyword', null, ['style' => 'padding-left:50px']) !!}
+                        {!! $errors->first('keyword', '<p class="help-block">:message</p>') !!}
+                    </div>
+
+                    <div class="form-group form-group--style">
+                        <input type="submit" value="Search">
+                    </div>
+                    @if ($errors->has('global'))
+                    <span class="help-block danger">
+                        <strong style="color:red">{{ $errors->first('global') }}</strong>
+                    </span>
+                    @endif
+                    <div class="form-group">
+                        <i class="fa fa-keyboard-o"></i>
+                        <input style="padding-left:50px" name="phone" type="text" placeholder="Result" disabled>
+                    </div>
+                    </form>
+
                 </div>
             </div>
-            <div class="col-sm-6 contact_info send_message">
-                <h2>Send Us a Message</h2>
-                <form class="form-inline contact_box">
-                    <input type="text" class="form-control input_box" placeholder="Full Name *">
-                    <!-- <input type="text" class="form-control input_box" placeholder="Last Name *"> -->
-                    <input type="text" class="form-control input_box" placeholder="Your Email *">
-                    <!-- <input type="text" class="form-control input_box" placeholder="Subject"> -->
-                    <!-- <input type="text" class="form-control input_box" placeholder="Your Website"> -->
-                    <textarea class="form-control input_box" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-default">Send Message</button>
-                </form>
-            </div>
+            <div class="col-lg-3 text-center"></div>
         </div>
     </div>
 </section>
-<!-- End All contact Info -->
+<!-- End Login Form -->
 
 @endsection
 
 @section('scripts')
-
-
+<script src="{{ URL::asset('/js/jquery.nice-select.js') }}"></script>
 @endsection
